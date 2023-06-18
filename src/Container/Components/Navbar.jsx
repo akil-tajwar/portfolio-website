@@ -33,8 +33,7 @@ const Navbar = () => {
                     <div className='flex flex-row gap-9 font-semibold'>
                         <a href="#" className={ active === "#" ? 'active' : '' } onClick={ () => setActive("#") }>Home</a>
                         <a href="#about" className={ active === "#about" ? 'active' : '' } onClick={ () => setActive("#about") }>About me</a>
-                        <a href="">What I Do</a>
-                        <a href="">Portfolio</a>
+                        <a href="#portfolio" className={ active === "#portfolio" ? 'active' : '' } onClick={ () => setActive("#portfolio") }>Portfolio</a>
                         <a href="">My Resume</a>
                         <a href="">Contact Me</a>
                     </div>

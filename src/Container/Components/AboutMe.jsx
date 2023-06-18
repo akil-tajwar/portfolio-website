@@ -1,8 +1,7 @@
 import React from 'react';
-import { RadialBarChart, RadialBar, ResponsiveContainer } from 'recharts';
 import { TiTick } from "react-icons/ti";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiMongodb, SiAdobeillustrator } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 import { DiIllustrator } from "react-icons/di";
 
 const AboutMe = () => {
@@ -36,7 +35,7 @@ const AboutMe = () => {
                         </div>
                         <div className='border flex flex-col justify-center items-center p-4 border-[#159e53] shadow rounded-lg w-full h-48'>
                             <DiIllustrator className='text-3xl mb-4 text-[#1c1c1c] primary-bg-color' />
-                            <h4 className='text-2xl font-semibold'>UI/UX Designer</h4>
+                            <h4 className='text-2xl font-semibold'>UI/UX Design</h4>
                             <p>10+ Projects</p>
                         </div>
                     </div>
@@ -47,8 +46,10 @@ const AboutMe = () => {
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />HTML5</li>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />CSS3</li>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />Javascript</li>
+                                <li className='flex gap-2'><TiTick className='primary-color text-2xl' />Tailwind CSS</li>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />Bootstrap</li>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />ReactJS</li>
+                                <li className='flex gap-2'><TiTick className='primary-color text-2xl' />Firebase</li>
                             </ul>
                         </div>
                         <div className='border border-[#159e53] p-4 shadow rounded-lg w-full'>
@@ -62,21 +63,6 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-            {/* <div style={{ width: "50%", height: "400px" }}>
-                <ResponsiveContainer width="100%" height="100%">
-                    <RadialBarChart cx="50%" cy="50%" innerRadius="70%" outerRadius="80%" barSize={10} data={data}>
-                        <RadialBar
-                            minAngle={15}
-                            label={{ position: 'insideStart', fill: '#8884d8' }}
-                            background
-                            clockWise
-                            dataKey="uv"
-                            startAngle={-180}
-                            endAngle={0}
-                        />
-                    </RadialBarChart>
-                </ResponsiveContainer>
-            </div> */}
         </div>
     );
 };
