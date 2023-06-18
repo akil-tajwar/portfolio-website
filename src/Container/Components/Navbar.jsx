@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                     <div className='flex flex-row gap-9 font-semibold'>
                         <Link className='hover:text-[#159e53] hover:font-semibold' to={'/'}>Home</Link>
-                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/contactus'}>About me</Link>
+                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'#about-me'}>About me</Link>
                         <Link className='hover:text-[#159e53] hover:font-semibold' to={'/dashboard'}>What I Do</Link>
                         <Link className='hover:text-[#159e53] hover:font-semibold' to={'/ourmenu'}>Portfolio</Link>
                         <Link className='hover:text-[#159e53] hover:font-semibold' to={'/ourshop'}>My Resume</Link>
