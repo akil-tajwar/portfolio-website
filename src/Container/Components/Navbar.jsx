@@ -24,18 +24,18 @@ const Navbar = () => {
     }, []);
     return (
         <div className=''>
-            <div className={isScrolled ? 'bg-[#2d2d2d] fixed w-full z-10 text-white py-8' : `fixed w-full z-10 text-white py-8`}>
+            <div className={isScrolled ? 'bg-[#1c1c1c] fixed w-full z-10 text-white py-8' : `fixed w-full z-10 text-white py-8`}>
                 <div className='flex w-3/4 mx-auto justify-between items-center'>
                     <div className=''>
                         <img className='w-40' src="/logo 2.png" alt="" />
                     </div>
                     <div className='flex flex-row gap-9 font-semibold'>
                         <Link className='hover:text-[#159e53]' to={'/'}>Home</Link>
-                        <Link className='hover:text-[#D99904]' to={'/contactus'}>Contact Us</Link>
-                        <Link className='hover:text-[#D99904]' to={'/dashboard'}>Dashboard</Link>
-                        <Link className='hover:text-[#D99904]' to={'/ourmenu'}>Our Menu</Link>
-                        <Link className='hover:text-[#D99904]' to={'/ourshop'}>Our Shop</Link>
-                        <Link className='hover:text-[#D99904]' to={'/login'}>Login</Link>
+                        <Link className='hover:text-[#159e53]' to={'/contactus'}>About me</Link>
+                        <Link className='hover:text-[#159e53]' to={'/dashboard'}>What I Do</Link>
+                        <Link className='hover:text-[#159e53]' to={'/ourmenu'}>Portfolio</Link>
+                        <Link className='hover:text-[#159e53]' to={'/ourshop'}>My Resume</Link>
+                        <Link className='hover:text-[#159e53]' to={'/login'}>Contact Me</Link>
                     </div>
                 </div>
             </div>

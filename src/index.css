@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  font-family: 'Saira', sans-serif;
+}
+.primary-color{
+  color: #159e53;
+}
+.primary-bg-color{
+  background-color: #159e53;
+}
+.primary-border-color{
+  border-left: #159e53 5px solid;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #159e53;
+}
