@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [active, setActive] = useState('#')
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,12 +31,12 @@ const Navbar = () => {
                         <img className='w-40' src="/logo 2.png" alt="" />
                     </div>
                     <div className='flex flex-row gap-9 font-semibold'>
-                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/'}>Home</Link>
-                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'#about-me'}>About me</Link>
-                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/dashboard'}>What I Do</Link>
-                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/ourmenu'}>Portfolio</Link>
-                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/ourshop'}>My Resume</Link>
-                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/login'}>Contact Me</Link>
+                        <a href="#" className={ active === "#" ? 'active' : '' } onClick={ () => setActive("#") }>Home</a>
+                        <a href="#about" className={ active === "#about" ? 'active' : '' } onClick={ () => setActive("#about") }>About me</a>
+                        <a href="">What I Do</a>
+                        <a href="">Portfolio</a>
+                        <a href="">My Resume</a>
+                        <a href="">Contact Me</a>
                     </div>
                 </div>
             </div>
