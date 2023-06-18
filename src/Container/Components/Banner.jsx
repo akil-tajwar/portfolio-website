@@ -7,7 +7,7 @@ const Banner = () => {
             <div className='bg-[url(/banner2.jpg)] bg-cover'>
                 <div className='bg-gradient-to-r from-[#1c1c1c] via-[#1c1c1cd6] justify-center items-center text-white'>
                     <div className='w-3/4 mx-auto pt-96 pb-80'>
-                        <h4 className='text-xl pb-4 font-bold'>I'm Akil Tajwar Chowdhury</h4>
+                        <h4 className='text-xl pb-5 font-bold'>I'm Akil Tajwar Chowdhury</h4>
                         <span className='text-6xl font-bold primary-color'>
                             <TypeAnimation
                                 sequence={[

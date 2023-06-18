@@ -30,12 +30,12 @@ const Navbar = () => {
                         <img className='w-40' src="/logo 2.png" alt="" />
                     </div>
                     <div className='flex flex-row gap-9 font-semibold'>
-                        <Link className='hover:text-[#159e53]' to={'/'}>Home</Link>
-                        <Link className='hover:text-[#159e53]' to={'/contactus'}>About me</Link>
-                        <Link className='hover:text-[#159e53]' to={'/dashboard'}>What I Do</Link>
-                        <Link className='hover:text-[#159e53]' to={'/ourmenu'}>Portfolio</Link>
-                        <Link className='hover:text-[#159e53]' to={'/ourshop'}>My Resume</Link>
-                        <Link className='hover:text-[#159e53]' to={'/login'}>Contact Me</Link>
+                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/'}>Home</Link>
+                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/contactus'}>About me</Link>
+                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/dashboard'}>What I Do</Link>
+                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/ourmenu'}>Portfolio</Link>
+                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/ourshop'}>My Resume</Link>
+                        <Link className='hover:text-[#159e53] hover:font-semibold' to={'/login'}>Contact Me</Link>
                     </div>
                 </div>
             </div>
