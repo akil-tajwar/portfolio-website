@@ -4,11 +4,11 @@ import { TypeAnimation } from 'react-type-animation';
 const Banner = () => {
     return (
         <div>
-            <div className='bg-[url(/banner2.jpg)] bg-cover'>
+            <div className='bg-[url(/banner2.jpg)] bg-cover bg-center lg:bg-left-top'>
                 <div className='bg-gradient-to-r from-[#1c1c1c] via-[#1c1c1cd6] justify-center items-center text-white'>
                     <div className='lg:w-3/4 w-11/12 mx-auto pt-96 pb-80'>
-                        <h4 className='text-xl pb-5 font-bold'>I'm Akil Tajwar Chowdhury</h4>
-                        <span className='lg:text-6xl text-5xl font-bold primary-color'>
+                        <h4 className='lg:text-2xl text-lg pb-5 font-bold'>I'm Akil Tajwar Chowdhury</h4>
+                        <span className='lg:text-6xl md:text-5xl text-4xl font-bold primary-color'>
                             <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially

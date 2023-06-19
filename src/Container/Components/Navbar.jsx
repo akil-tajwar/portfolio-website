@@ -26,13 +26,14 @@ const Navbar = () => {
     return (
         <div className=''>
             <div className={isScrolled ? 'bg-[#1c1c1c] fixed w-full z-10 text-white py-8' : `fixed w-full z-10 text-white py-8`}>
-                <div className='flex w-3/4 mx-auto justify-between items-center'>
+                <div className='flex flex-col lg:flex-row gap-5 w-11/12 lg:w-3/4 mx-auto justify-between items-center'>
                     <div className=''>
                         <img className='w-40' src="/logo 2.png" alt="" />
                     </div>
-                    <div className='flex flex-row gap-9 font-semibold'>
+                    <div className='grid lg:grid-cols-6 grid-cols-3 gap-x-7 gap-y-3 lg:gap-9 font-semibold'>
                         <a href="#" className={ active === "#" ? 'active' : '' } onClick={ () => setActive("#") }>Home</a>
                         <a href="#about" className={ active === "#about" ? 'active' : '' } onClick={ () => setActive("#about") }>About me</a>
+                        <a href="#services" className={ active === "#services" ? 'active' : '' } onClick={ () => setActive("#services") }>My Services</a>
                         <a href="#portfolio" className={ active === "#portfolio" ? 'active' : '' } onClick={ () => setActive("#portfolio") }>Portfolio</a>
                         <a href="">My Resume</a>
                         <a href="">Contact Me</a>
