@@ -11,7 +11,7 @@
         "_id": "6490b94e3a536f232aced58f",
         "image": "https://i.ibb.co/hfYBhwq/2.png",
         "name": "Nastar Jhuri",
-        "category": "",
+        "category": "Frontend Website",
         "repo_link": "",
         "live_link": ""
     },
@@ -19,7 +19,7 @@
         "_id": "6490b94eda21009f22e416fd",
         "image": "https://i.ibb.co/Lt8c7fg/3.png",
         "name": "Basic Calculator",
-        "category": "",
+        "category": "Basic web application",
         "repo_link": "",
         "live_link": ""
     },
@@ -27,7 +27,7 @@
         "_id": "6490b94e3b4c26e9faccde57",
         "image": "https://i.ibb.co/xHLzbBG/4.png",
         "name": "Blood Bank",
-        "category": "",
+        "category": "Frontend Website",
         "repo_link": "",
         "live_link": ""
     },
@@ -35,7 +35,7 @@
         "_id": "6490b94e95a4e46c7356d036",
         "image": "https://i.ibb.co/vwv0PMy/5.png",
         "name": "Think Unique",
-        "category": "",
+        "category": "Frontend Website",
         "repo_link": "",
         "live_link": ""
     },
@@ -43,7 +43,7 @@
         "_id": "6490b94ed76b23010d34da93",
         "image": "https://i.ibb.co/dfzmC1Q/6.png",
         "name": "G3 Architect",
-        "category": "",
+        "category": "Frontend Website",
         "repo_link": "",
         "live_link": ""
     },
@@ -51,7 +51,7 @@
         "_id": "6490b94e04953f0f4a45edfd",
         "image": "https://i.ibb.co/tJ5DBkg/7.png",
         "name": "Justice",
-        "category": "",
+        "category": "Frontend Website",
         "repo_link": "",
         "live_link": ""
     },
@@ -59,7 +59,7 @@
         "_id": "6490b94eff48964672fadf35",
         "image": "https://i.ibb.co/89TXgSg/9.png",
         "name": "Knowledge Cafe",
-        "category": "",
+        "category": "Frontend Website",
         "repo_link": "",
         "live_link": ""
     }

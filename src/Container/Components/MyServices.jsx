@@ -1,5 +1,7 @@
 import React from 'react';
 import { TiTick } from "react-icons/ti";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+// import { BiSolidQuoteLeft, BiSolidQuoteRight } from "react-icons/bi";
 
 const MyServices = () => {
     return (
@@ -38,6 +40,13 @@ const MyServices = () => {
                         <div className='flex gap-2 pb-3 text-white'><TiTick className='text-2xl absolute primary-color' /><span className='pl-8'>Create wireframes and prototypes for visualizing website structure and flow</span></div>
                         <div className='flex gap-2 text-white'><TiTick className='text-2xl absolute primary-color' /><span className='pl-8'>Conduct user research and analysis to understand needs and preferences</span></div>
                     </div>
+                </div>
+            </div>
+            <div className='bg-[url(/keyboard.jpg)] bg-fixed bg-cover mt-10 rounded-lg bg-center lg:bg-left-top'>
+                <div className='text-4xl flex gap-10 justify-center items-center text-white text-center lg:py-16 py-10'>
+                    <FaQuoteLeft className='text-white mb-28 ml-4 text-6xl primary-color' />
+                    <h1>Never stop learning, because life never stops teaching</h1>
+                    <FaQuoteRight className='text-white mt-28 mr-4 text-6xl primary-color' />
                 </div>
             </div>
         </div>

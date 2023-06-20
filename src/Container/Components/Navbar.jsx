@@ -35,7 +35,7 @@ const Navbar = () => {
                         <a href="#about" className={ active === "#about" ? 'active' : '' } onClick={ () => setActive("#about") }>About me</a>
                         <a href="#services" className={ active === "#services" ? 'active' : '' } onClick={ () => setActive("#services") }>My Services</a>
                         <a href="#portfolio" className={ active === "#portfolio" ? 'active' : '' } onClick={ () => setActive("#portfolio") }>Portfolio</a>
-                        <a href="">My Resume</a>
+                        <a href="#my-resume" className={ active === "#my-resume" ? 'active' : '' } onClick={ () => setActive("#my-resume") }>My Resume</a>
                         <a href="">Contact Me</a>
                     </div>
                 </div>
