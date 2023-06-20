@@ -33,7 +33,7 @@ const AboutMe = () => {
                     </div>
                     <div className='grid lg:grid-cols-2 pt-10 md:grid-cols-2 grid-cols-1 gap-10'>
                         <div className='border cursor-default border-white bg-[#181818] p-4 shadow2 duration-200 rounded-lg w-full'>
-                            <h4 className='rounded-lg px-3 py-2 font-semibold mb-5 bg-[#008f40] text-white text-2xl'>UI/UX Design</h4>
+                            <h4 className='rounded-lg px-3 py-2 font-semibold mb-5 bg-[#008f40] text-white text-2xl'>Frontend Tools</h4>
                             <ul className='grid grid-cols-2 gap-5'>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />HTML5</li>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />CSS3</li>
@@ -45,7 +45,7 @@ const AboutMe = () => {
                             </ul>
                         </div>
                         <div className='border cursor-default border-white bg-[#181818] p-4 shadow2 duration-200 rounded-lg w-full'>
-                            <h4 className='rounded-lg px-3 py-2 font-semibold mb-5 bg-[#008f40] text-white text-2xl'>UI/UX Design</h4>
+                            <h4 className='rounded-lg px-3 py-2 font-semibold mb-5 bg-[#008f40] text-white text-2xl'>Backend Tools</h4>
                             <ul className='grid grid-cols-2 gap-5'>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />NodeJS</li>
                                 <li className='flex gap-2'><TiTick className='primary-color text-2xl' />ExpressJS</li>

@@ -39,3 +39,6 @@ body {
 :hover.shadow2{
   box-shadow: #0a0a0a 0px 2px 4px 0px, #0a0a0a 0px 2px 16px 0px;
 }
+.custom-space{
+  right: -1000px;
+}
