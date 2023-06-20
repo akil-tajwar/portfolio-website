@@ -13,12 +13,12 @@ const Portfolio = () => {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
                 {
                     portfolio.map(item => <div item={item} key={item._id}>
-                        <div className='primary-bg-color p-3 rounded-lg'>
+                        <div className='bg-[#181818] border-[#159e53] shadow2 duration-200 border p-3 rounded-lg'>
                             <img className='rounded-lg' src={item.image} alt="" />
-                            <h3 className='text-2xl text-[#1c1c1c] pt-2 font-semibold'>{item.name}</h3>
+                            <h3 className='text-2xl text-white pt-2 font-bold'>{item.name}</h3>
                             <div className='text-center flex gap-5 justify-center mt-8'>
-                                <button className='w-32 py-1 rounded border border-white text-white text-xl font-semibold'>Github</button>
-                                <button className='w-32 py-1 rounded primary-color bg-white border border-white text-xl font-semibold'>Live Link</button>
+                                <button className='w-32 py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'>Github</button>
+                                <button className='w-32 py-1 rounded text-[#1c1c1c] bg-[#159e53] hover:bg-white border-2 border-[#159e53] hover:border-white duration-200 text-xl font-semibold'>Live Link</button>
                             </div>
                         </div>
                     </div>)

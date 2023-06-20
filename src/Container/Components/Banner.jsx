@@ -27,7 +27,7 @@ const Banner = () => {
                         <div>
                             <p className='lg:w-1/2 md:w-2/3 border-l-4 mb-3 mt-4 pl-5 primary-border-color flex'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nulla nostrum error voluptatibus consequatur in. Dicta facere ducimus ad alias hic voluptatibus consectetur facilis fugit, rerum reprehenderit quam perferendis sapiente.</p>
                         </div>
-                        <button className='mt-3 primary-bg-color rounded font-semibold text-xl px-5 py-2'>Hire Me</button>
+                        <button className='mt-3 bg-[#008f40] rounded font-semibold text-xl px-5 py-2'>Let's talk</button>
                     </div>
                 </div>
             </div>
