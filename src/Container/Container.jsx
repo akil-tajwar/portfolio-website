@@ -7,6 +7,7 @@ import ScrollTop from './Components/ScrollTop';
 import MyServices from './Components/MyServices';
 import MyResume from './Components/MyResume';
 import Reviews from './Components/Reviews';
+import ContactMe from './Components/ContactMe';
 
 const Container = () => {
     return (
@@ -19,6 +20,7 @@ const Container = () => {
             <Portfolio></Portfolio>
             <MyResume></MyResume>
             <Reviews></Reviews>
+            <ContactMe></ContactMe>
         </div>
     );
 };

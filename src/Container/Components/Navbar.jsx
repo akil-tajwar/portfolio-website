@@ -26,7 +26,7 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <div className={isScrolled ? 'bg-[#1c1c1c] fixed w-full z-10 text-white py-8' : `fixed w-full z-10 text-white py-8`}>
+        <div className={isScrolled ? 'bg-[#1c1c1c] shadow fixed w-full z-10 text-white py-8' : `fixed w-full z-10 text-white py-8`}>
                 <div className='flex flex-row gap-5 w-11/12 lg:w-3/4 mx-auto justify-between items-center'>
                     <div className=''>
                         <img className='w-40' src="/logo 2.png" alt="" />
@@ -50,7 +50,7 @@ const Navbar = () => {
                             <a href="#portfolio" className={active === "#portfolio" ? 'active' : ''} onClick={() => setActive("#portfolio")}>Portfolio</a>
                             <a href="#my-resume" className={active === "#my-resume" ? 'active' : ''} onClick={() => setActive("#my-resume")}>My Resume</a>
                             <a href="#reviews" className={active === "#reviews" ? 'active' : ''} onClick={() => setActive("#reviews")}>Reviews</a>
-                            <a href="contact" className={active === "#contact" ? 'active' : ''} onClick={() => setActive("#contact")}>Contact Me</a>
+                            <a href="#contact" className={active === "#contact" ? 'active' : ''} onClick={() => setActive("#contact")}>Contact Me</a>
                         </div>
                     </div>
                 </div>

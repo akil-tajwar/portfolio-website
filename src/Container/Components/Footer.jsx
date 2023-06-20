@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div id='contact'>
-            
+        <div className='shadow bg-[#181818] text-center py-3'>
+            <p className='text-white'>© Copyright 2023 | All rights reserved</p>
         </div>
     );
 };
