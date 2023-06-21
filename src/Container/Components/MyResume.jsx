@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const MyResume = () => {
+    useEffect(()=> {
+        Aos.init({duration: 2000});
+    }, [])
     return (
         <div className='w-11/12 lg:w-3/4 mx-auto mb-20' id='my-resume'>
-            <h1 className='text-center text-4xl mb-10 font-semibold primary-color'>My Resume</h1>
+            <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold primary-color'>My Resume</h1>
             <div className='flex lg:flex-row flex-col gap-8'>
-                <div className='text-white'>
+                <div data-aos="fade-right" className='text-white'>
                     <h4 className='text-2xl pb-8 font-semibold'>Experiences</h4>
                     <div className=''>
                         <div className='flex bg-gradient-to-r from-[#3b3b3b] rounded-l-full justify-center items-center'>
@@ -41,7 +46,7 @@ const MyResume = () => {
                         </div>
                     </div>
                 </div>
-                <div className='text-white'>
+                <div data-aos="fade-left" className='text-white'>
                     <h4 className='text-2xl pb-8 pt-10 lg:pt-0 font-semibold'>Education</h4>
                     <div className=''>
                         <div className='flex bg-gradient-to-r from-[#3b3b3b] rounded-l-full justify-center items-center'>
