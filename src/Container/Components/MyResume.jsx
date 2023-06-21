@@ -7,7 +7,7 @@ const MyResume = () => {
         Aos.init({duration: 2000});
     }, [])
     return (
-        <div className='w-11/12 lg:w-3/4 mx-auto mb-20' id='my-resume'>
+        <div className='w-11/12 lg:w-3/4 mx-auto pt-20 lg:pt-32 mb-20' id='my-resume'>
             <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold primary-color'>My Resume</h1>
             <div className='flex lg:flex-row flex-col gap-8'>
                 <div data-aos="fade-right" className='text-white'>

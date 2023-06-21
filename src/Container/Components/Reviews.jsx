@@ -9,7 +9,7 @@ const Reviews = () => {
         Aos.init({ duration: 2000 });
     }, [])
     return (
-        <div className='w-3/4 mx-auto pb-20' id='reviews'>
+        <div className='w-3/4 mx-auto pt-20 lg:pt-32' id='reviews'>
             <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold text-[#159e53]'>Reviews</h1>
             <div data-aos="zoom-in">
                 <Carousel className=' rounded-lg text-center'>

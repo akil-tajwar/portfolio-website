@@ -3,7 +3,7 @@ import { FaGithubSquare, FaFacebookSquare, FaLinkedin, FaInstagram } from 'react
 
 const Footer = () => {
     return (
-        <div className='shadow bg-[#181818] text-center py-3'>
+        <div className='shadow bg-[#181818] text-center py-3 mt-20'>
             <div className='text-[#159e53] text-xl lg:hidden flex flex-row gap-4 justify-center pb-3'>
                 <FaInstagram className='hover:text-white duration-200' />
                 <FaFacebookSquare className='hover:text-white duration-200' />

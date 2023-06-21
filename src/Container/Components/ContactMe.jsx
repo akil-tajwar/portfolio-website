@@ -7,7 +7,7 @@ const ContactMe = () => {
         Aos.init({duration: 2000});
     }, [])
     return (
-        <div className='w-11/12 lg:w-3/4 mx-auto pb-20' id='contact'>
+        <div className='w-11/12 lg:w-3/4 mx-auto pt-20 lg:pt-32' id='contact'>
             <h1 data-aos="fade-down" className='text-center text-4xl pb-10 font-semibold primary-color'>Contact Me</h1>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-20'>
                 <div className='' data-aos="fade-right">

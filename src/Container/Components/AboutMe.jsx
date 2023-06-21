@@ -11,7 +11,7 @@ const AboutMe = () => {
         Aos.init({duration: 2000});
     }, [])
     return (
-        <div className='text-white lg:w-3/4 w-11/12 mx-auto py-20' id='about'>
+        <div className='text-white lg:w-3/4 w-11/12 mx-auto pt-20 lg:pt-32' id='about'>
             <h1 className='text-center text-4xl mb-10 font-semibold text-[#159e53]'>About Me</h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <div data-aos="fade-right">

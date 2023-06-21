@@ -13,7 +13,7 @@ const Portfolio = () => {
         Aos.init({duration: 2000});
     }, [])
     return (
-        <div className='w-11/12 lg:w-3/4 py-20 mx-auto' id='portfolio'>
+        <div className='w-11/12 lg:w-3/4 pt-20 lg:pt-32 mx-auto' id='portfolio'>
             <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold primary-color'>Portfolio</h1>
             <div data-aos="fade-up" className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
                 {

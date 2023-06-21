@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 
@@ -26,7 +27,7 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <div className={isScrolled ? 'bg-[#1c1c1c] shadow fixed w-full z-10 text-white py-8' : `fixed w-full z-10 text-white py-8`}>
+        <div className={isScrolled ? 'bg-[#1c1c1c] shadow fixed w-full z-10 text-white py-4' : `fixed w-full z-10 text-white py-8`}>
             <div className='flex flex-row gap-5 w-11/12 lg:w-3/4 mx-auto justify-between items-center'>
                 <div className=''>
                     <img className='w-40' src="/logo 2.png" alt="" />
@@ -44,13 +45,13 @@ const Navbar = () => {
                                 <RxCross2 className="h-8 w-8 text-white" />
                             </div>
                         </div>
-                        <a href="#" className={active === "#" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#")}>Home</a>
-                        <a href="#about" className={active === "#about" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#about")}>About me</a>
-                        <a href="#services" className={active === "#services" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#services")}>My Services</a>
-                        <a href="#portfolio" className={active === "#portfolio" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#portfolio")}>Portfolio</a>
-                        <a href="#my-resume" className={active === "#my-resume" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#my-resume")}>My Resume</a>
-                        <a href="#reviews" className={active === "#reviews" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#reviews")}>Reviews</a>
-                        <a href="#contact" className={active === "#contact" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#contact")}>Contact Me</a>
+                        <Link smooth to="#" className={active === "#" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#")}>Home</Link>
+                        <Link smooth to="#about" className={active === "#about" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#about")}>About me</Link>
+                        <Link smooth to="#services" className={active === "#services" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#services")}>My Services</Link>
+                        <Link smooth to="#portfolio" className={active === "#portfolio" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#portfolio")}>Portfolio</Link>
+                        <Link smooth to="#my-resume" className={active === "#my-resume" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#my-resume")}>My Resume</Link>
+                        <Link smooth to="#reviews" className={active === "#reviews" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#reviews")}>Reviews</Link>
+                        <Link smooth to="#contact" className={active === "#contact" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#contact")}>Contact Me</Link>
                     </div>
                 </div>
             </div>
