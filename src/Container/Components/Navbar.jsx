@@ -36,14 +36,14 @@ const Navbar = () => {
                             <FaBars className="h-8 w-8 text-white" />
                         </div>
                         <div className={`fixed lg:static p-6 lg:w-fit w-3/4 h-full text-right flex flex-col lg:flex-row lg:gap-10 lg:justify-center lg:items-center duration-500 ${open ? 'right-0 top-0 bg-[#181818]' : 'overflow-hidden custom-space top-0'}`}>
-                            <div className='flex justify-between lg:hidden'>
+                            <div className='flex justify-between mb-6 lg:mb-0 lg:hidden py-4 border-b-2 border-white'>
                                 <div>
-                                    <h2 className='text-2xl'>Menu</h2>
+                                    <h2 className='text-3xl text-[#159e53] font-semibold'>Menu</h2>
                                 </div>
                                 <div className='cursor-pointer' onClick={() => setOpen(!open)}>
                                     <RxCross2 className="h-8 w-8 text-white" />
                                 </div>
-                            </div><hr />
+                            </div>
                             <a href="#" className={active === "#" ? 'active' : ''} onClick={() => setActive("#")}>Home</a>
                             <a href="#about" className={active === "#about" ? 'active' : ''} onClick={() => setActive("#about")}>About me</a>
                             <a href="#services" className={active === "#services" ? 'active' : ''} onClick={() => setActive("#services")}>My Services</a>
