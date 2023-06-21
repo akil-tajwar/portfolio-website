@@ -49,7 +49,7 @@ const Navbar = () => {
                         <Link smooth to="#about" className={active === "#about" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#about")}>About me</Link>
                         <Link smooth to="#services" className={active === "#services" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#services")}>My Services</Link>
                         <Link smooth to="#portfolio" className={active === "#portfolio" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#portfolio")}>Portfolio</Link>
-                        <Link smooth to="#my-resume" className={active === "#my-resume" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#my-resume")}>My Resume</Link>
+                        <Link smooth to="#my-resume" className={active === "#my-resume" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#my-resume")}>My Education</Link>
                         <Link smooth to="#reviews" className={active === "#reviews" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#reviews")}>Reviews</Link>
                         <Link smooth to="#contact" className={active === "#contact" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#contact")}>Contact Me</Link>
                     </div>

@@ -8,9 +8,9 @@ const MyResume = () => {
     }, [])
     return (
         <div className='w-11/12 lg:w-3/4 mx-auto pt-20 lg:pt-32 mb-20' id='my-resume'>
-            <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold primary-color'>My Resume</h1>
-            <div className='flex lg:flex-row flex-col gap-8'>
-                <div data-aos="fade-right" className='text-white'>
+            <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold primary-color'>My Education</h1>
+            <div className='grid lg:grid-cols-2 grid-cols-1 gap-8'>
+                {/* <div data-aos="fade-right" className='text-white'>
                     <h4 className='text-2xl pb-8 font-semibold'>Experiences</h4>
                     <div className=''>
                         <div className='flex bg-gradient-to-r from-[#3b3b3b] rounded-l-full justify-center items-center'>
@@ -45,9 +45,12 @@ const MyResume = () => {
                             <p className='text-justify lg:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repudiandae rerum culpa molestias consequuntur. Illo atque velit voluptatem veniam nam?</p>
                         </div>
                     </div>
+                </div> */}
+                <div data-aos="fade-right" className='hidden w-11/12 lg:block'>
+                    <img className='w-full' src="/education.svg" alt="" />
                 </div>
                 <div data-aos="fade-left" className='text-white'>
-                    <h4 className='text-2xl pb-8 pt-10 lg:pt-0 font-semibold'>Education</h4>
+                    {/* <h4 className='text-2xl pb-8 pt-10 lg:pt-0 font-semibold'>Education</h4> */}
                     <div className=''>
                         <div className='flex bg-gradient-to-r from-[#3b3b3b] rounded-l-full justify-center items-center'>
                             <h3 className='rounded-full primary-bg-color font-semibold text-center w-10 h-10 p-2'>1</h3>
