@@ -3,7 +3,7 @@ import { FaGithubSquare, FaFacebookSquare, FaLinkedin, FaInstagram } from 'react
 
 const FollowMe = () => {
     return (
-        <div className='hidden md:block lg:block'>
+        <div className='hidden lg:block'>
             <div className='fixed bottom-72 right-11 -rotate-90'>
                 <div className='text-white bg-[#181818] py-1 px-3 shadow rounded-lg border border-[#159e53] mt-72 flex gap-10 flex-row justify-center items-center'>
                     <h4 className=''>Follow Me</h4>

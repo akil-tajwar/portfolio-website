@@ -22,7 +22,7 @@ const ContactMe = () => {
                         <button className='mt-3 bg-[#008f40] text-white rounded font-semibold text-xl px-5 py-2'>Let's talk</button>
                     </div>
                 </div>
-                <div className='hidden lg:block'>
+                <div className='hidden md:hidden lg:block'>
                     <img className='' src="/message.svg" alt="" />
                 </div>
             </div>
