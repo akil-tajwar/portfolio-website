@@ -10,13 +10,18 @@ const Banner = () => {
     }, [])
 
     const downloadResume = (url) => {
-        const filename = url.split('/').pop();
-        const aTag = document.createElement('a');
-        aTag.href = url;
-        aTag.setAttribute('download', filename);
-        document.body.appendChild(aTag);
-        aTag.click();
-        aTag.remove();
+        fetch(url)
+            .then(res => res.blob())
+            .then(blob => {
+                const blobURL = window.URL.createObjectURL(new Blob([]))
+                const filename = url.split('/').pop();
+                const aTag = document.createElement('a');
+                aTag.href = blobURL;
+                aTag.setAttribute('download', filename);
+                document.body.appendChild(aTag);
+                aTag.click();
+                aTag.remove();
+            })
     }
     return (
         <div>
