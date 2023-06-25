@@ -13,7 +13,7 @@ const MyServices = () => {
             <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold primary-color'>My Services</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                 <div data-aos="fade-right" className='border cursor-default rounded-lg p-4 shadow2 duration-200 bg-[#181818] border-whtie'>
-                    <h4 className='rounded-lg px-3 py-2 font-semibold mb-5 bg-[#008f40] text-white text-2xl'>Fontend Development</h4>
+                    <h4 className='rounded-lg px-3 py-2 font-semibold mb-5 bg-[#008f40] text-white text-2xl'>Frontend Development</h4>
                     <div className='flex gap-2 pb-3 text-white'><TiTick className='text-2xl absolute primary-color' /><span className='pl-8'>Responsive design for optimal user experiences across devices and screen sizes</span></div>
                     <div className='flex gap-2 pb-3 text-white'><TiTick className='text-2xl absolute primary-color' /><span className='pl-8'>Deep understanding of core concepts like HTML, CSS and Javascript</span></div>
                     <div className='flex gap-2 pb-3 text-white'><TiTick className='text-2xl absolute primary-color' /><span className='pl-8'>Develope user interfaces by using popular framework ReactJS</span></div>
