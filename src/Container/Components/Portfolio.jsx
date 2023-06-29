@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Portfolio = () => {
     const [portfolio, setPortfolio] = useState([]);
@@ -25,6 +26,7 @@ const Portfolio = () => {
                             <div className='text-center flex gap-5 justify-center mt-8'>
                                 <button className='w-32 py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'>Github</button>
                                 <button className='w-32 py-1 rounded text-[#1c1c1c] bg-[#159e53] hover:bg-white border-2 border-[#159e53] hover:border-white duration-200 text-xl font-semibold'>Live Link</button>
+                                <button className='bg-white rounded text-xl flex justify-center items-center text-black w-10'><AiOutlineArrowRight/></button>
                             </div>
                         </div>
                     </div>)

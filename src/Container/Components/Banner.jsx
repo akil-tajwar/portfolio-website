@@ -2,26 +2,30 @@ import React, { useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-const resumeUrl = 'http://localhost:5173/Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf';
+const resumeUrl = 'Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf';
 
 const Banner = () => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, [])
 
-    const downloadResume = (url) => {
-        fetch(url)
-            .then(res => res.blob())
-            .then(blob => {
-                const blobURL = window.URL.createObjectURL(new Blob([]))
-                const filename = url.split('/').pop();
-                const aTag = document.createElement('a');
-                aTag.href = blobURL;
-                aTag.setAttribute('download', filename);
-                document.body.appendChild(aTag);
-                aTag.click();
-                aTag.remove();
-            })
+    const downloadResume = () => {
+        // fetch(url)
+        //     .then(res => res.blob())
+        //     .then(blob => {
+        //         const blobURL = window.URL.createObjectURL(new Blob([]))
+        //         const filename = url.split('/').pop();
+        //         const aTag = document.createElement('a');
+        //         aTag.href = blobURL;
+        //         aTag.setAttribute('download', filename);
+        //         document.body.appendChild(aTag);
+        //         aTag.click();
+        //         aTag.remove();
+        //     })
+        const anchor = document.createElement('a');
+        anchor.href = resumeUrl;
+        anchor.download = 'Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf'
+        anchor.click();
     }
     return (
         <div>
@@ -48,7 +52,7 @@ const Banner = () => {
                         <div>
                             <p className='lg:w-1/2 md:w-2/3 border-l-4 mb-3 mt-4 pl-5 primary-border-color flex'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam nulla nostrum error voluptatibus consequatur in. Dicta facere ducimus ad alias hic voluptatibus consectetur facilis fugit, rerum reprehenderit quam perferendis sapiente.</p>
                         </div>
-                        <button onClick={() => downloadResume(resumeUrl)} className='mt-3 bg-[#008f40] rounded font-semibold text-lg px-3 py-2'>Download Resume</button>
+                        <button onClick={downloadResume} className='mt-3 bg-[#008f40] rounded font-semibold text-lg px-3 py-2'>Download Resume</button>
                     </div>
                 </div>
             </div>
