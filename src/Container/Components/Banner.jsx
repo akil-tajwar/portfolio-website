@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-const resumeUrl = 'Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf';
 
 const Banner = () => {
     useEffect(() => {
@@ -10,18 +9,7 @@ const Banner = () => {
     }, [])
 
     const downloadResume = () => {
-        // fetch(url)
-        //     .then(res => res.blob())
-        //     .then(blob => {
-        //         const blobURL = window.URL.createObjectURL(new Blob([]))
-        //         const filename = url.split('/').pop();
-        //         const aTag = document.createElement('a');
-        //         aTag.href = blobURL;
-        //         aTag.setAttribute('download', filename);
-        //         document.body.appendChild(aTag);
-        //         aTag.click();
-        //         aTag.remove();
-        //     })
+        const resumeUrl = 'Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf';
         const anchor = document.createElement('a');
         anchor.href = resumeUrl;
         anchor.download = 'Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf'
