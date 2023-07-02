@@ -5,8 +5,6 @@ import FollowMe from './Components/FollowMe';
 import Portfolio from './Components/Portfolio';
 import ScrollTop from './Components/ScrollTop';
 import MyServices from './Components/MyServices';
-import MyResume from './Components/MyResume';
-import Reviews from './Components/Reviews';
 import ContactMe from './Components/ContactMe';
 
 const Container = () => {
@@ -16,10 +14,10 @@ const Container = () => {
             <ScrollTop></ScrollTop>
             <Banner></Banner>
             <AboutMe></AboutMe>
+            {/* <MyResume></MyResume> */}
             <MyServices></MyServices>
             <Portfolio></Portfolio>
-            <MyResume></MyResume>
-            <Reviews></Reviews>
+            {/* <Reviews></Reviews> */}
             <ContactMe></ContactMe>
         </div>
     );

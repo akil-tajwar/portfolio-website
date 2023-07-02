@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Portfolio = () => {
@@ -10,16 +8,13 @@ const Portfolio = () => {
             .then(res => res.json())
             .then(data => setPortfolio(data))
     }, [])
-    useEffect(()=> {
-        Aos.init({duration: 2000});
-    }, [])
     return (
         <div className='w-11/12 lg:w-3/4 pt-20 lg:pt-32 mx-auto' id='portfolio'>
-            <h1 data-aos="fade-down" className='text-center text-4xl mb-10 font-semibold primary-color'>Portfolio</h1>
-            <div data-aos="fade-up" className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
+            <h1 className='text-center text-4xl mb-10 font-semibold primary-color'>Portfolio</h1>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
                 {
                     portfolio.map(item => <div item={item} key={item._id}>
-                        <div className='bg-[#181818] border-white shadow2 duration-200 border p-3 rounded-lg'>
+                        <div className='bg-[#242424] shadow2 duration-200 p-3 rounded-lg'>
                             <img className='rounded-lg' src={item.image} alt="" />
                             <h3 className='text-2xl primary-color pt-2 font-bold'>{item.name}</h3>
                             <p className='text-white'>{item.category}</p>
