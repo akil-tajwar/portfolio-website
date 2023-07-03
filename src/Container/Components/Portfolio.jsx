@@ -18,10 +18,15 @@ const Portfolio = () => {
                             <img className='rounded-lg' src={item.image} alt="" />
                             <h3 className='text-2xl primary-color pt-2 font-bold'>{item.name}</h3>
                             <p className='text-white'>{item.category}</p>
-                            <div className='text-center flex gap-5 justify-center mt-8'>
-                                <button className='w-32 py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'>Github</button>
-                                <button className='w-32 py-1 rounded text-[#1c1c1c] bg-[#159e53] hover:bg-white border-2 border-[#159e53] hover:border-white duration-200 text-xl font-semibold'>Live Link</button>
-                                <button className='bg-white rounded border border-white hover:border-[#159e53] hover:text-[#159e53] duration-200 text-xl flex justify-center items-center text-black w-10'><AiOutlineArrowRight/></button>
+                            <div className='text-center mt-8'>
+                                <div className='flex gap-3 justify-center'>
+                                    <button className='w-full py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'>Client Side</button>
+                                    <button className='w-full py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'>Server Side</button>
+                                    <button className='bg-white cursor-pointer w-24 rounded border border-white hover:border-[#159e53] hover:text-[#159e53] duration-200 text-xl flex justify-center items-center text-black'><AiOutlineArrowRight /></button>
+                                </div>
+                                <div className='flex mt-3'>
+                                    <button className='w-full py-1 rounded text-[#1c1c1c] bg-[#159e53] hover:bg-white border-2 border-[#159e53] hover:border-white duration-200 text-xl font-semibold'>Live Link</button>
+                                </div>
                             </div>
                         </div>
                     </div>)
