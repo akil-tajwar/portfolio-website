@@ -1,66 +1,62 @@
 [
     {
-        "_id": "6490b94ef67d131665654abe",
-        "image": "https://i.ibb.co/qNLJMPv/1.png",
-        "name": "Atom Electronics",
-        "category": "Fullstack Website",
-        "repo_link": "",
-        "live_link": ""
+        "_id": "6490b94eda21009f22e416fd",
+        "image": "https://i.ibb.co/Lt8c7fg/3.png",
+        "name": "Basic Calculator",
+        "category": "Basic web application",
+        "client_repo": "https://github.com/akil-tajwar/Basic-Calculator",
+        "server_repo": "",
+        "live_link": "https://akil-tajwar.github.io/Basic-Calculator/",
+        "details": ""
     },
     {
         "_id": "6490b94e3a536f232aced58f",
         "image": "https://i.ibb.co/hfYBhwq/2.png",
         "name": "Nastar Jhuri",
         "category": "Frontend Website",
-        "repo_link": "",
-        "live_link": ""
-    },
-    {
-        "_id": "6490b94eda21009f22e416fd",
-        "image": "https://i.ibb.co/Lt8c7fg/3.png",
-        "name": "Basic Calculator",
-        "category": "Basic web application",
-        "repo_link": "",
-        "live_link": ""
+        "client_repo": "https://github.com/akil-tajwar/Nastar_Zuri",
+        "server_repo": "",
+        "live_link": "",
+        "details": ""
     },
     {
         "_id": "6490b94e3b4c26e9faccde57",
         "image": "https://i.ibb.co/xHLzbBG/4.png",
         "name": "Blood Bank",
         "category": "Frontend Website",
-        "repo_link": "",
-        "live_link": ""
+        "client_repo": "https://github.com/akil-tajwar/Blood_Bank",
+        "server_repo": "",
+        "live_link": "https://akil-tajwar.github.io/Blood_Bank/Home.html",
+        "details": ""
     },
     {
-        "_id": "6490b94ed76b23010d34da93",
-        "image": "https://i.ibb.co/dfzmC1Q/6.png",
-        "name": "G3 Architect",
+        "_id": "6490b94e3b4c26e9faccde57",
+        "image": "https://i.ibb.co/JCnfym3/10.png",
+        "name": "Chef's Corner",
         "category": "Frontend Website",
-        "repo_link": "",
-        "live_link": ""
+        "client_repo": "https://github.com/akil-tajwar/chefs-corner-client",
+        "server_repo": "https://github.com/akil-tajwar/chefs-corner-server",
+        "live_link": "https://chefs-corner-5ea52.web.app/",
+        "details": ""
     },
     {
-        "_id": "6490b94e95a4e46c7356d036",
-        "image": "https://i.ibb.co/vwv0PMy/5.png",
-        "name": "Think Unique",
+        "_id": "6490b94e3b4c26e9faccde57",
+        "image": "https://i.ibb.co/nzm8y4f/11.png",
+        "name": "Turbo Toys",
         "category": "Frontend Website",
-        "repo_link": "",
-        "live_link": ""
+        "client_repo": "https://github.com/akil-tajwar/turbo-toys-client",
+        "server_repo": "https://github.com/akil-tajwar/turbo-toys-server",
+        "live_link": "https://turbo-toys-11ad9.web.app/",
+        "details": ""
     },
     {
-        "_id": "6490b94e04953f0f4a45edfd",
-        "image": "https://i.ibb.co/tJ5DBkg/7.png",
-        "name": "Justice",
-        "category": "Frontend Website",
-        "repo_link": "",
-        "live_link": ""
-    },
-    {
-        "_id": "6490b94eff48964672fadf35",
-        "image": "https://i.ibb.co/89TXgSg/9.png",
-        "name": "Knowledge Cafe",
-        "category": "Frontend Website",
-        "repo_link": "",
-        "live_link": ""
+        "_id": "6490b94e3b4c26e9faccde57",
+        "image": "https://i.ibb.co/Cn8fv4G/12.png",
+        "name": "PixelCam School",
+        "category": "Fullstack Website",
+        "client_repo": "https://github.com/akil-tajwar/pixel-cam-client",
+        "server_repo": "https://github.com/akil-tajwar/pixel-cam-server",
+        "live_link": "https://pixel-cam-2e7a0.web.app/",
+        "details": ""
     }
 ]
