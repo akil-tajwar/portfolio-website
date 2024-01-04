@@ -16,18 +16,22 @@ const Portfolio = () => {
                     portfolio.map(item => <div item={item} key={item._id}>
                         <div className='bg-[#242424] shadow2 duration-200 p-3 rounded-lg'>
                             <img className='rounded-lg' src={item.image} alt="" />
-                            <h3 className='text-2xl primary-color pt-2 font-bold'>{item.name}</h3>
-                            <p className='text-white'>{item.category}</p>
-                            <div className='text-center mt-8'>
+                            <div className='flex justify-between items-center pt-2'>
+                                <div>
+                                    <h3 className='text-2xl primary-color font-bold'>{item.name}</h3>
+                                    <p className='text-white'>{item.category}</p>
+                                </div>
+                                <a target='_blank' href={item.live_link}><button className='rounded text-[#1c1c1c] p-3 bg-[#159e53] duration-200 text-xl font-bold'><AiOutlineArrowRight/></button></a>
+                            </div>
+                            {/* <div className='text-center mt-8'>
                                 <div className='flex gap-3 justify-center'>
                                     <a href={item.client_repo} target='_blank' className='w-full py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'><button>Client Side</button></a>
                                     <a href={item.server_repo} target='_blank' className='w-full py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'><button >Server Side</button></a>
-                                    <a href={item.details} target='_blank' className='w-24 flex justify-center py-1 rounded border-2 border-[#159e53] hover:border-white text-[#159e53] hover:text-white duration-200 text-xl font-semibold'><button ><AiOutlineArrowRight /></button></a>
                                 </div>
                                 <div className='mt-3'>
                                     <a className='flex' target='_blank' href={item.live_link}><button className='w-full py-1 rounded text-[#1c1c1c] bg-[#159e53] hover:bg-white border-2 border-[#159e53] hover:border-white duration-200 text-xl font-semibold'>Live Link</button></a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>)
                 }

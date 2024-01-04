@@ -13,11 +13,10 @@ const FollowMe = () => {
                         <a target='_blank' href=""><FaLinkedin className='rotate-90 hover:text-white duration-200' /></a>
                         <a target='_blank' href="https://github.com/akil-tajwar"><FaGithubSquare className='rotate-90 hover:text-white duration-200' /></a>
                     </div>
+                    
                 </div>
             </div>
         </div>
-
-
     );
 };
 
