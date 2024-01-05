@@ -27,10 +27,10 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <div className={isScrolled ? 'bg-[#181818] shadow fixed w-full z-10 text-white py-4' : `fixed w-full z-10 text-white py-4`}>
+        <div className={isScrolled ? 'bg-[#181818] shadow fixed w-full z-10 text-white py-2' : `fixed w-full z-10 text-white py-4`}>
             <div className='flex flex-row gap-5 w-11/12 lg:w-3/4 mx-auto justify-between items-center'>
                 <div className=''>
-                    <img className='w-40' src="/logo 2.png" alt="" />
+                    <img className='w-20' src="/logo 2.png" alt="" />
                 </div>
                 <div>
                     <div className='cursor-pointer lg:hidden' onClick={() => setOpen(!open)}>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     <div className={`fixed lg:static p-6 lg:w-fit w-3/4 h-full text-right flex flex-col lg:flex-row lg:gap-10 lg:justify-center lg:items-center duration-500 ${open ? 'right-0 top-0 bg-[#181818] lg:bg-transparent' : 'overflow-hidden bg-transparent custom-space top-0'}`}>
                         <div className='flex justify-between mb-6 lg:mb-0 lg:hidden py-4 border-b-2 border-white'>
                             <div>
-                                <img className='w-40' src="/logo 2.png" alt="" />
+                                <img className='w-20' src="/logo 2.png" alt="" />
                             </div>
                             <div className='cursor-pointer' onClick={() => setOpen(!open)}>
                                 <RxCross2 className="h-8 w-8 text-white" />

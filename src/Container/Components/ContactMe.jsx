@@ -19,11 +19,11 @@ const ContactMe = () => {
         }
         else {
             emailjs.sendForm('service_h2q9jan', 'template_zv7j9vr', form.current, 'WokdTe7q4sxZ2WTJz')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
             Swal.fire(
                 'Your message has been sent',
                 'Thank you for contacting me',
@@ -38,15 +38,17 @@ const ContactMe = () => {
                 <form className='' ref={form} onSubmit={sendEmail}>
                     <h3 className='text-xl text-white mb-10'>For any inquiries feel free to ask me. Or you can always reach out to my social accounts.</h3>
                     <div className='flex gap-5 text-white mb-5'>
-                        <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_name' type="text"  placeholder='Your Name (required)' />
+                        <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_name' type="text" placeholder='Your Name (required)' />
                     </div>
                     <div className='flex gap-5 text-white'>
-                        <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_email' type="text"  placeholder='Email Address (required)' />
+                        <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_email' type="text" placeholder='Email Address (required)' />
                         <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_phone' type="text" placeholder='Phone Number' />
                     </div>
-                    <textarea className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white mt-5' name='message'  placeholder='Your Message (required)' cols="30" rows="5"></textarea>
+                    <textarea className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white mt-5' name='message' placeholder='Your Message (required)' cols="30" rows="5"></textarea>
                     <div className='text-right'>
-                        <input type='submit' value="Let's talk" className='mt-3 cursor-pointer bg-[#008f40] text-white rounded font-semibold text-xl px-5 py-2' />
+                        <button className='border-2 border-[#008f40] p-1 rounded'>
+                            <input type='submit' value="Let's talk" className='mt-3 cursor-pointer bg-[#008f40] text-white rounded font-semibold text-xl px-5 py-2' />
+                        </button>
                     </div>
                 </form>
                 <div className='hidden md:hidden lg:block'>
