@@ -22,6 +22,50 @@ body {
 
 
 /* for custom button */
+.banner-button {
+  transform: translate(-0%, -0%);
+  background: #242424;
+  text-align: center;
+  transition: 0.5;
+  overflow: hidden;
+  /* position: absolute; */
+  /* text-decoration: none; */
+  /* text-transform: uppercase; */
+  /* width: 150px;
+  height: 60px; */
+  /* line-height: 60px; */
+  /* color: #FFF; */
+  /* padding: 0px 10px; */
+  /* letter-spacing: 5px; */
+  /* font-size: 20px; */
+}
+
+.banner-button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  transition: 1s;
+  border-style: solid;
+  border-color: #159e53;
+  border-width: 100px 150px;
+  transform: rotate(360deg);
+  transform-origin: top left
+}
+
+.banner-button:hover:before {
+  transform: rotate(40deg);
+  border-width: 47px 150px;
+}
+
+.banner-button:hover {
+  /* color: #ff0; */
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
 
 
 /* for portfolio animation */
