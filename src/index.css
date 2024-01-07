@@ -22,7 +22,7 @@ body {
 
 
 /* for custom button */
-.banner-button {
+.custom-button {
   transform: translate(-0%, -0%);
   background: #242424;
   text-align: center;
@@ -40,7 +40,7 @@ body {
   /* font-size: 20px; */
 }
 
-.banner-button:before {
+.custom-button:before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -56,12 +56,12 @@ body {
   transform-origin: top left
 }
 
-.banner-button:hover:before {
+.custom-button:hover:before {
   transform: rotate(40deg);
   border-width: 47px 150px;
 }
 
-.banner-button:hover {
+.custom-button:hover {
   /* color: #ff0; */
   transition: 0.5s;
   transition-delay: 0.3s;

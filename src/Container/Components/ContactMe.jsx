@@ -47,7 +47,7 @@ const ContactMe = () => {
                     <textarea className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white mt-5' name='message' placeholder='Your Message (required)' cols="30" rows="5"></textarea>
                     <div className='text-right'>
                         <button className='border-2 border-[#008f40] p-1 rounded'>
-                            <input type='submit' value="Let's talk" className='mt-3 cursor-pointer bg-[#008f40] text-white rounded font-semibold text-xl px-5 py-2' />
+                            <input type='submit' value="Let's talk" className='cursor-pointer bg-[#008f40] text-white rounded font-semibold text-xl px-5 py-2' />
                         </button>
                     </div>
                 </form>
