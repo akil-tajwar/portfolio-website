@@ -16,6 +16,25 @@ const Navbar = () => {
             } else {
                 setIsScrolled(false);
             }
+
+            const aboutPosition = document.getElementById('about')?.offsetTop || 0;
+            const servicesPosition = document.getElementById('services')?.offsetTop || 0;
+            const portfolioPosition = document.getElementById('portfolio')?.offsetTop || 0;
+            const contactPosition = document.getElementById('contact')?.offsetTop || 0;
+
+            const currentPosition = window.scrollY + window.innerHeight / 2;
+
+            if (currentPosition < aboutPosition) {
+                setActive('#');
+            } else if (currentPosition < servicesPosition) {
+                setActive('#about');
+            } else if (currentPosition < portfolioPosition) {
+                setActive('#services');
+            } else if (currentPosition < contactPosition) {
+                setActive('#portfolio');
+            } else {
+                setActive('#contact');
+            }
         };
 
         // Add the scroll event listener when the component mounts
