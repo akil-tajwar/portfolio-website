@@ -28,16 +28,6 @@ body {
   text-align: center;
   transition: 0.5;
   overflow: hidden;
-  /* position: absolute; */
-  /* text-decoration: none; */
-  /* text-transform: uppercase; */
-  /* width: 150px;
-  height: 60px; */
-  /* line-height: 60px; */
-  /* color: #FFF; */
-  /* padding: 0px 10px; */
-  /* letter-spacing: 5px; */
-  /* font-size: 20px; */
 }
 
 .custom-button:before {
@@ -62,7 +52,6 @@ body {
 }
 
 .custom-button:hover {
-  /* color: #ff0; */
   transition: 0.5s;
   transition-delay: 0.3s;
 }
@@ -79,7 +68,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(to right, transparent, white, transparent); */
   left: -100%;
   transition: 0.5s;
 }

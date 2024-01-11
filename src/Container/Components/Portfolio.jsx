@@ -14,7 +14,7 @@ const Portfolio = () => {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>
                 {
                     portfolio.map(item => <div item={item} key={item._id}>
-                        <div className='bg-[#242424] box shadow2 duration-500 p-3 rounded-lg'>
+                        <div className='bg-[#242424] box shadow2 duration-300 p-3 rounded-lg'>
                             <img className='rounded-lg' src={item.image} alt="" />
                             <div className='flex justify-between items-center pt-2'>
                                 <div>
