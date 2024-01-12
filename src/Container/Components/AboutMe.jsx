@@ -2,18 +2,21 @@ import React, { useEffect } from 'react';
 import { LuMonitorSmartphone } from "react-icons/lu";
 import { MdOutlineSpeed } from "react-icons/md";
 import { SiMongodb } from "react-icons/si";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const AboutMe = () => {
     return (
         <div className='text-white lg:w-3/4 w-11/12 mx-auto pt-20 lg:pt-32' id='about'>
             <h1 className='text-center text-4xl mb-10 font-semibold text-[#159e53]'>About Me</h1>
             <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-10'>
-                <div className='hidden lg:block md:block'>
+                <div data-aos="fade-down" className='hidden lg:block md:block'>
                     <img className='rounded-lg' src="/my photo 2.jpg" alt="" />
                 </div>
                 <div className='col-span-2'>
                     <div className=''>
-                        <div className='pb-5 flex justify-between border-b-2 border-white'>
+                        <div data-aos="fade-up" className='pb-5 flex justify-between border-b-2 border-white'>
                             <div>
                                 <h2 className='lg:text-3xl text-xl pb-1 font-semibold'>Akil Tajwar Chowdhury</h2>
                                 <h4 className='lg:text-xl font-semibold'>MERN Developer</h4>
@@ -30,10 +33,10 @@ const AboutMe = () => {
                             <img className='rounded-lg' src="/my photo 2.jpg" alt="" />
                         </div>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 pt-10'>
-                            <div>
+                            <div data-aos="fade-right">
                                 <p className='text-justify'>Hello there! I am Akil Tajwar Chowdhury, a fullstack web developer with expertise in ReactJS, MongoDB, Express, and NodeJS. I'm specialized in building scalable and responsive web applications accroding to business needs. With proper knowledge in frontend development using ReactJS, I can create interactive and user-friendly interfaces. On the backend, I use MongoDB, Express, and NodeJS to design efficient databases, implement RESTful APIs, and develop server-side logic. I also have a strong foundation in competitive programming and a passion for staying updated with the latest industry trends.</p>
                             </div>
-                            <div className='hidden lg:block'>
+                            <div data-aos="fade-left" className='hidden lg:block'>
                                 <div className=''>
                                     <div className='pb-5'>
                                         <h2 className="text-2xl font-semibold pb-4 primary-color">EDUCATION</h2>
@@ -57,12 +60,12 @@ const AboutMe = () => {
             </div>
             <div className='block lg:hidden pt-10'>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-10'>
-                    <div className='pb-5 md:col-span-2'>
+                    <div data-aos="fade-right" className='pb-5 md:col-span-2'>
                         <h2 className="text-2xl font-semibold pb-4 primary-color">EDUCATION</h2>
                         <p>B.Sc Honours (4th year) in Computer Science & Engineering</p>
                         <p>International Islamic University Chittagong</p>
                     </div>
-                    <div className=''>
+                    <div data-aos="fade-left" className=''>
                         <h2 className="text-2xl font-semibold pb-4 primary-color">LANGUAGES</h2>
                         <ol>
                             <li>Bengali - Native</li>
@@ -74,7 +77,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className='grid lg:grid-cols-3 grid-cols-1 gap-10 mt-10'>
-                <div className='lg:col-span-2'>
+                <div data-aos="fade-right" className='lg:col-span-2'>
                     <h2 className="text-2xl font-semibold pb-8 primary-color">SKILLS</h2>
                     <p className='flex flex-wrap gap-5'>
                         <span className='bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md'>HTML5</span>
@@ -90,7 +93,7 @@ const AboutMe = () => {
                         <span className='bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md'>NodeJS</span>
                     </p>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <h2 className="text-2xl font-semibold mb-6 primary-color">TOOLS</h2>
                     <div className='flex flex-wrap gap-5'>
                         <div class="bg-[#242424] border border-[#242424] hover:border-[#159e53] shadow2 duration-200 p-5 rounded-md" title='VS Code'><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-4xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M16 3v18l4 -2.5v-13z"></path><path d="M9.165 13.903l-4.165 3.597l-2 -1l4.333 -4.5m1.735 -1.802l6.932 -7.198v5l-4.795 4.141"></path><path d="M16 16.5l-11 -10l-2 1l13 13.5"></path></svg></div>
@@ -105,17 +108,17 @@ const AboutMe = () => {
                 </div>
             </div>
             <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-10 my-10'>
-                <div className='border cursor-default duration-500 bg-[#242424] items-center p-4 border-[#242424] shadow2 rounded-lg w-full'>
+                <div data-aos="fade-right" className='border cursor-default duration-500 bg-[#242424] items-center p-4 border-[#242424] shadow2 rounded-lg w-full'>
                     <LuMonitorSmartphone className='text-7xl rounded-md p-3 mb-4 text-white bg-[#159e533c]' />
                     <h4 className='text-2xl pb-4 text-[#159e53] font-semibold'>Completely responsive websites for all screen sizes</h4>
                     <p>Creating websites that adapt and provide optimal user experiences across devices and screen sizes through responsive design techniques.</p>
                 </div>
-                <div className='border cursor-default duration-500 bg-[#242424] items-center p-4 border-[#242424] shadow2 rounded-lg w-full'>
+                <div data-aos="fade-up" className='border cursor-default duration-500 bg-[#242424] items-center p-4 border-[#242424] shadow2 rounded-lg w-full'>
                     <SiMongodb className='text-7xl rounded-md p-3 mb-4 text-white bg-[#159e533c]' />
                     <h4 className='text-2xl pb-4 text-[#159e53] font-semibold'>Websites, that have unique and engaging design</h4>
                     <p> Creating visually appealing and captivating designs that leave a lasting impression on visitors, fostering a positive user experience.</p>
                 </div>
-                <div className='border cursor-default duration-500 bg-[#242424] items-center p-4 border-[#242424] shadow2 rounded-lg w-full'>
+                <div data-aos="fade-left" className='border cursor-default duration-500 bg-[#242424] items-center p-4 border-[#242424] shadow2 rounded-lg w-full'>
                     <MdOutlineSpeed className='text-7xl rounded-md p-3 mb-4 text-white bg-[#159e533c]' />
                     <h4 className='text-2xl pb-4 text-[#159e53] font-semibold'>High performance Websites with best navigation</h4>
                     <p>Delivering high-performance websites with seamless navigation for exceptional user experiences and efficient access to information.</p>

@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Banner = () => {
     const downloadResume = () => {
@@ -13,7 +16,7 @@ const Banner = () => {
         <div>
             <div className='lg:bg-[url(/banner2.jpg)] bg-[url(/banner2-phone.jpg)] bg-cover bg-center lg:bg-left-top'>
                 <div className='bg-gradient-to-r from-[#181818] lg:via-[#181818d6] justify-center items-center text-white'>
-                    <div className='lg:w-3/4 w-11/12 mx-auto pt-64 pb-48 lg:pt-96 lg:pb-80'>
+                    <div data-aos="fade-right" className='lg:w-3/4 w-11/12 mx-auto pt-64 pb-48 lg:pt-96 lg:pb-80'>
                         <h4 className='lg:text-2xl text-lg pb-5 font-bold'>I'm Akil Tajwar Chowdhury</h4>
                         <span className='lg:text-6xl md:text-5xl text-4xl font-bold primary-color'>
                             <TypeAnimation
