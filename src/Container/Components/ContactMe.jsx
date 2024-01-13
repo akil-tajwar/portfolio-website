@@ -35,7 +35,7 @@ const ContactMe = () => {
         <div className='w-11/12 lg:w-3/4 mx-auto pt-20 lg:pt-32' id='contact'>
             <h1 className='text-center text-4xl pb-10 font-semibold primary-color'>Contact Me</h1>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-20'>
-                <form data-aos="fade-right" data-aos-duration="1500" className='' ref={form} onSubmit={sendEmail}>
+                <form data-aos="fade-right" className='' ref={form} onSubmit={sendEmail}>
                     <h3 className='text-xl text-white mb-10'>For any inquiries feel free to ask me. Or you can always reach out to my social accounts.</h3>
                     <div className='flex gap-5 text-white mb-5'>
                         <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_name' type="text" placeholder='Your Name (required)' />
@@ -51,7 +51,7 @@ const ContactMe = () => {
                         </button>
                     </div>
                 </form>
-                <div data-aos="fade-left" data-aos-duration="1500" className='hidden md:hidden lg:block'>
+                <div data-aos="fade-left" className='hidden md:hidden lg:block'>
                     <img className='' src="/message.svg" alt="" />
                 </div>
             </div>

@@ -36,6 +36,9 @@ const Portfolio = () => {
                     </div>)
                 }
             </div>
+            <div>
+                <h3 className='text-[#008f40] text-center mt-10 text-xl font-semibold cursor-pointer'>See more</h3>
+            </div>
         </div>
     );
 };
