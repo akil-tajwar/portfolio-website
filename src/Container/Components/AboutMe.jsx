@@ -29,7 +29,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='lg:hidden block md:hidden pt-10'>
+                        <div data-aos="fade-left" className='lg:hidden block md:hidden pt-10'>
                             <img className='rounded-lg' src="/my photo 2.jpg" alt="" />
                         </div>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 pt-10'>

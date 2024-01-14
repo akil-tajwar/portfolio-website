@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+import { FaArrowRight } from "react-icons/fa";
 
 const Portfolio = () => {
     const [portfolio, setPortfolio] = useState([]);
@@ -21,7 +21,11 @@ const Portfolio = () => {
                                     <h3 className='text-2xl primary-color font-bold'>{item.name}</h3>
                                     <p className='text-white'>{item.category}</p>
                                 </div>
-                                <a className='p-1 border-2 border-[#008f40] rounded' target='_blank' href={item.live_link}><button className='rounded text-[#1c1c1c] hover:text-white p-2 bg-[#159e53] duration-200 text-xl font-bold'><AiOutlineArrowRight/></button></a>
+                                <a className='p-1 border-2 border-[#008f40] hover:border-white rounded' target='_blank' href={item.live_link}>
+                                    <button className='rounded text-[#1c1c1c] hover:text-white p-2 bg-[#159e53] duration-200 text-xl'>
+                                    <FaArrowRight />
+                                    </button>
+                                </a>
                             </div>
                             {/* <div className='text-center mt-8'>
                                 <div className='flex gap-3 justify-center'>
