@@ -10,14 +10,14 @@ import ContactMe from './Components/ContactMe';
 const Container = () => {
     return (
         <div>
-            <FollowMe />
+            {/* <FollowMe /> */}
             {/* <ScrollTop /> */}
             <Banner />
             <AboutMe />
-            {/* <MyResume></MyResume> */}
+            {/* <MyResume /> */}
             <MyServices />
             <Portfolio />
-            {/* <Reviews></Reviews> */}
+            {/* <Reviews /> */}
             <ContactMe />
         </div>
     );
