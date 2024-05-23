@@ -8,11 +8,11 @@ AOS.init();
 
 const AboutMe = () => {
     return (
-        <div className='text-white lg:w-3/4 w-11/12 mx-auto pt-20 lg:pt-32' id='about'>
+        <div className='text-white overflow-hidden lg:w-3/4 w-11/12 mx-auto pt-20 lg:pt-32' id='about'>
             <h1 className='text-center text-4xl mb-10 font-semibold text-[#159e53]'>About Me</h1>
             <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-10'>
                 <div data-aos="fade-down" className='hidden lg:block md:block'>
-                    <img className='rounded-lg' src="/my photo 2.jpg" alt="" />
+                    <img className='rounded-lg border-2 border-[#159e53]' src="/my photo 2.jpg" alt="" />
                 </div>
                 <div className='col-span-2'>
                     <div className=''>

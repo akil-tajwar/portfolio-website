@@ -4,7 +4,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const MyServices = () => {
     return (
-        <div className='w-11/12 lg:w-3/4 mx-auto pt-20 lg:pt-32' id='services'>
+        <div className='w-11/12 lg:w-3/4 overflow-hidden mx-auto pt-20 lg:pt-32' id='services'>
             <h1 className='text-center text-4xl mb-10 font-semibold primary-color'>My Services</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
                 <div data-aos="fade-right" className='cursor-default rounded-lg p-4 shadow2 duration-200 bg-[#242424]'>

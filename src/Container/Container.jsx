@@ -10,15 +10,15 @@ import ContactMe from './Components/ContactMe';
 const Container = () => {
     return (
         <div>
-            <FollowMe></FollowMe>
-            <ScrollTop></ScrollTop>
-            <Banner></Banner>
-            <AboutMe></AboutMe>
+            <FollowMe />
+            {/* <ScrollTop /> */}
+            <Banner />
+            <AboutMe />
             {/* <MyResume></MyResume> */}
-            <MyServices></MyServices>
-            <Portfolio></Portfolio>
+            <MyServices />
+            <Portfolio />
             {/* <Reviews></Reviews> */}
-            <ContactMe></ContactMe>
+            <ContactMe />
         </div>
     );
 };

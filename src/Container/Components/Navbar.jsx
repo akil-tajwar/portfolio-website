@@ -46,7 +46,7 @@ const Navbar = () => {
         };
     }, []);
     return (
-        <div className={isScrolled ? 'bg-[#181818] shadow fixed w-full z-10 text-white py-2' : `fixed w-full z-10 text-white py-4`}>
+        <div className={isScrolled ? 'bg-[#181818] shadow fixed w-[100vw] z-10 text-white py-2' : `fixed w-[100vw] z-10 text-white py-4`}>
             <div className='flex flex-row gap-5 w-11/12 lg:w-3/4 mx-auto justify-between items-center'>
                 <div className=''>
                     <img className='w-20' src="/logo 2.png" alt="" />
