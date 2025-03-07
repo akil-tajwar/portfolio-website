@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import { Slide } from "react-awesome-reveal";
 
 const ContactMe = () => {
     const form = useRef();
@@ -35,25 +36,27 @@ const ContactMe = () => {
         <div className='w-11/12 lg:w-3/4 mx-auto pt-20 lg:pt-32' id='contact'>
             <h1 className='text-center text-4xl pb-10 font-semibold primary-color'>Contact Me</h1>
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-20'>
-                <form data-aos="fade-right" className='' ref={form} onSubmit={sendEmail}>
-                    <h3 className='text-xl text-white mb-10'>For any inquiries feel free to ask me. Or you can always reach out to my social accounts.</h3>
-                    <div className='flex gap-5 text-white mb-5'>
-                        <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_name' type="text" placeholder='Your Name (required)' />
-                    </div>
-                    <div className='flex gap-5 text-white'>
-                        <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_email' type="text" placeholder='Email Address (required)' />
-                        <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_phone' type="text" placeholder='Phone Number' />
-                    </div>
-                    <textarea className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white mt-5' name='message' placeholder='Your Message (required)' cols="30" rows="5"></textarea>
-                    <div className='text-right'>
-                        <button className='border-2 border-[#008f40] p-1 rounded'>
-                            <input type='submit' value="Let's talk" className='cursor-pointer bg-[#008f40] text-white rounded font-semibold text-xl px-5 py-2' />
-                        </button>
-                    </div>
-                </form>
-                <div data-aos="fade-left" className='hidden md:hidden lg:block'>
+                <Slide direction='left'>
+                    <form className='' ref={form} onSubmit={sendEmail}>
+                        <h3 className='text-xl text-white mb-10'>For any inquiries feel free to ask me. Or you can always reach out to my social accounts.</h3>
+                        <div className='flex gap-5 text-white mb-5'>
+                            <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_name' type="text" placeholder='Your Name (required)' />
+                        </div>
+                        <div className='flex gap-5 text-white'>
+                            <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_email' type="text" placeholder='Email Address (required)' />
+                            <input className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white' name='user_phone' type="text" placeholder='Phone Number' />
+                        </div>
+                        <textarea className='bg-[#181818] rounded-md w-full px-4 py-5 border border-white mt-5' name='message' placeholder='Your Message (required)' cols="30" rows="5"></textarea>
+                        <div className='text-right'>
+                            <button className='border-2 border-[#008f40] p-1 rounded'>
+                                <input type='submit' value="Let's talk" className='cursor-pointer bg-[#008f40] text-white rounded font-semibold text-xl px-5 py-2' />
+                            </button>
+                        </div>
+                    </form>
+                </Slide>
+                <Slide direction='right' className='hidden md:hidden lg:block'>
                     <img className='' src="/message.svg" alt="" />
-                </div>
+                </Slide>
             </div>
         </div>
     );

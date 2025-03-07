@@ -10,25 +10,27 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            // Check the scroll position and update the state accordingly
             if (window.scrollY > 0) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
             }
-
+    
             const aboutPosition = document.getElementById('about')?.offsetTop || 0;
+            const educationPosition = document.getElementById('education')?.offsetTop || 0;
             const servicesPosition = document.getElementById('services')?.offsetTop || 0;
             const portfolioPosition = document.getElementById('portfolio')?.offsetTop || 0;
             const contactPosition = document.getElementById('contact')?.offsetTop || 0;
-
+    
             const currentPosition = window.scrollY + window.innerHeight / 2;
-
+    
             if (currentPosition < aboutPosition) {
                 setActive('#');
-            } else if (currentPosition < servicesPosition) {
+            } else if (currentPosition < educationPosition) { // Fix order: Education should come after About
                 setActive('#about');
-            } else if (currentPosition < portfolioPosition) {
+            } else if (currentPosition < servicesPosition) { // Services should come after Education
+                setActive('#education');
+            } else if (currentPosition < portfolioPosition) { 
                 setActive('#services');
             } else if (currentPosition < contactPosition) {
                 setActive('#portfolio');
@@ -36,20 +38,18 @@ const Navbar = () => {
                 setActive('#contact');
             }
         };
-
-        // Add the scroll event listener when the component mounts
+    
         window.addEventListener('scroll', handleScroll);
-
-        // Clean up the event listener when the component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    
     return (
         <div className={isScrolled ? 'bg-[#181818] shadow fixed w-[100vw] z-10 text-white py-2' : `fixed w-[100vw] z-10 text-white py-4`}>
             <div className='flex flex-row gap-5 w-11/12 lg:w-3/4 mx-auto justify-between items-center'>
                 <div className=''>
-                    <img className='w-20' src="/logo 2.png" alt="" />
+                    <img className='w-16' src="/logo 2.png" alt="" />
                 </div>
                 <div>
                     <div className='cursor-pointer lg:hidden' onClick={() => setOpen(!open)}>
@@ -66,7 +66,7 @@ const Navbar = () => {
                         </div>
                         <Link smooth to="#" className={active === "#" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#")}>Home</Link>
                         <Link smooth to="#about" className={active === "#about" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#about")}>About me</Link>
-                        {/* <Link smooth to="#my-resume" className={active === "#my-resume" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#my-resume")}>My Education</Link> */}
+                        <Link smooth to="#education" className={active === "#education" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#education")}>My Education</Link>
                         <Link smooth to="#services" className={active === "#services" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#services")}>Services</Link>
                         <Link smooth to="#portfolio" className={active === "#portfolio" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#portfolio")}>Portfolio</Link>
                         <Link smooth to="#contact" className={active === "#contact" ? 'primary-color text-2xl mb-5 lg:mb-0 lg:text-lg' : 'text-2xl mb-5 lg:mb-0 lg:text-lg'} onClick={() => setActive("#contact")}>Contact me</Link>
