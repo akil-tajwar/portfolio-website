@@ -6,7 +6,7 @@ import Portfolio from './Components/Portfolio';
 import ScrollTop from './Components/ScrollTop';
 import MyServices from './Components/MyServices';
 import ContactMe from './Components/ContactMe';
-import MyResume from './Components/MyResume';
+import MyEducation from './Components/MyEducation';
 
 const Container = () => {
     return (
@@ -15,7 +15,7 @@ const Container = () => {
             {/* <ScrollTop /> */}
             <Banner />
             <AboutMe />
-            <MyResume />
+            <MyEducation />
             <MyServices />
             <Portfolio />
             {/* <Reviews /> */}
