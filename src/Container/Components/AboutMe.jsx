@@ -51,17 +51,15 @@ const AboutMe = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-10">
               <Slide direction="left">
                 <p className="text-justify">
-                  Hello there! I am Akil Tajwar Chowdhury, a fullstack web
-                  developer with expertise in ReactJS, MongoDB, Express, and
-                  NodeJS. I'm specialized in building scalable and responsive
-                  web applications accroding to business needs. With proper
-                  knowledge in frontend development using ReactJS, I can create
-                  interactive and user-friendly interfaces. On the backend, I
-                  use MongoDB, Express, and NodeJS to design efficient
-                  databases, implement RESTful APIs, and develop server-side
-                  logic. I also have a strong foundation in competitive
-                  programming and a passion for staying updated with the latest
-                  industry trends.
+                  I'm Akil Tajwar Chowdhury, a full-stack developer who builds
+                  ERP systems and e-commerce platforms for real business needs.
+                  On the frontend, I work with React.js, Next.js, and TypeScript
+                  to create fast, responsive interfaces that are easy to use. On
+                  the backend, I build REST APIs and server-side logic with
+                  Node.js, Express.js, and Hono, backed by MySQL and MongoDB
+                  databases designed for scale. I also
+                  have a strong competitive programming background, which shapes
+                  how I approach problem solving and write efficient code.
                 </p>
               </Slide>
               <Slide direction="right" className="hidden lg:block">
