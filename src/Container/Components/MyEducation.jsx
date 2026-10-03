@@ -101,7 +101,8 @@ const MyEducation = () => {
                 <p className="text-justify lg:text-left">
                   Pursued higher secondary education with a concentration in
                   science. Gained deeper insights into advanced mathematics,
-                  chemistry, and computer programming. </p>
+                  chemistry, and computer programming.{" "}
+                </p>
               </div>
             </div>
             <div className="">
@@ -119,10 +120,9 @@ const MyEducation = () => {
                   International Islamic University Chittagong
                 </h4>
                 <p className="text-justify lg:text-left">
-                  Currently pursuing a Bachelor’s degree in Computer Science &
-                  Engineering. Specializing in software development and database management. Working on various
-                  academic projects, research, and internships to enhance
-                  practical knowledge.
+                  Completed a Bachelor’s degree in Computer Science &
+                  Engineering. Specializing in software development and database
+                  management.
                 </p>
               </div>
             </div>
