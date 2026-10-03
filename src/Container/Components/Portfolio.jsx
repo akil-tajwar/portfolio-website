@@ -8,7 +8,7 @@ const portfolio = [
     name: "HRIS",
     description:
       "A multi-tenant HR management system for garments and manufacturing businesses, covering employees, attendance, leave, payroll, assets, and reporting with role-based access.",
-    technologies: ["Next.js", "Tailwind CSS", "Express", "Node.js", "MySQL"],
+    technologies: ["Next.js", "Tailwind CSS", "Express.js", "Node.js", "MySQL"],
     live_link: "https://hris-frontend-personal.vercel.app",
   },
   {
@@ -17,8 +17,8 @@ const portfolio = [
     name: "Cloth Store",
     description:
       "A full-stack clothing e-commerce platform with product browsing, cart and checkout, and an admin dashboard to manage products and orders.",
-    technologies: ["Next.js", "Tailwind CSS", "Express", "Node.js", "MySQL"],
-    live_link: "https://chefs-corner-5ea52.web.app/",
+    technologies: ["Next.js", "Tailwind CSS", "Express.js", "Node.js", "MySQL"],
+    live_link: "https://cloth-store-frontend-personal-lemon.vercel.app",
   },
   {
     id: 3,
@@ -26,8 +26,8 @@ const portfolio = [
     name: "Benign Fashion",
     description:
       "A fashion brand storefront with curated collections, product detail pages, and a streamlined ordering experience.",
-    technologies: ["Next.js", "Tailwind CSS", "Express", "Node.js", "MySQL"],
-    live_link: "https://pixel-cam-2e7a0.web.app/",
+    technologies: ["Next.js", "Tailwind CSS", "Express.js", "Node.js", "MySQL"],
+    live_link: "https://benign-fashion-frontend-pearl.vercel.app",
   },
 ];
 
