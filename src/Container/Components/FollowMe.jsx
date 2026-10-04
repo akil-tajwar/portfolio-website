@@ -19,7 +19,10 @@ const FollowMe = () => {
             <a target="_blank" href="https://www.facebook.com/akiltajwar.chy/">
               <FaFacebookSquare className="rotate-90 hover:text-white duration-200" />
             </a>
-            <a target="_blank" href="">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/akil-tajwar-chowdhury-013518286/"
+            >
               <FaLinkedin className="rotate-90 hover:text-white duration-200" />
             </a>
             <a target="_blank" href="https://github.com/akil-tajwar">
