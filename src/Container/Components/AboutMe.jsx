@@ -8,6 +8,15 @@ import "aos/dist/aos.css";
 AOS.init();
 
 const AboutMe = () => {
+  const START_DATE = new Date(2024, 10, 1); // November 1, 2024
+  const now = new Date();
+  let totalMonths =
+    (now.getFullYear() - START_DATE.getFullYear()) * 12 +
+    (now.getMonth() - START_DATE.getMonth());
+  if (now.getDate() < START_DATE.getDate()) totalMonths -= 1;
+  const experienceYears = Math.floor(totalMonths / 12);
+  const experienceMonths = totalMonths % 12;
+
   return (
     <div
       className="text-white lg:w-3/4 w-11/12 mx-auto pt-20 lg:pt-32"
@@ -34,19 +43,48 @@ const AboutMe = () => {
                   <h2 className="lg:text-3xl text-xl pb-1 font-semibold">
                     Akil Tajwar Chowdhury
                   </h2>
-                  <h4 className="lg:text-xl font-semibold">MERN Developer</h4>
+                  <h4 className="lg:text-xl font-semibold">Web Developer</h4>
                 </div>
-                <div className="flex gap-2">
-                  <h1 className="text-6xl primary-color font-semibold">8</h1>
-                  <div className="text-xl">
-                    <p>months</p>
-                    <p>experience</p>
+                <div className="shrink-0 text-right">
+                  <p className="mb-1 text-[12px] uppercase tracking-[0.2em]">
+                    Experience
+                  </p>
+                  <div className="flex items-center justify-end gap-2">
+                    {experienceYears > 0 && (
+                      <div className="text-center">
+                        <p className="text-2xl font-semibold leading-none primary-color">
+                          {experienceYears}
+                        </p>
+                        <p className="mt-1 text-[10px] uppercase tracking-widest">
+                          {experienceYears === 1 ? "Year" : "Years"}
+                        </p>
+                      </div>
+                    )}
+
+                    {experienceYears > 0 && experienceMonths > 0 && (
+                      <div className="h-7 w-px bg-white/20" />
+                    )}
+
+                    {(experienceMonths > 0 || experienceYears === 0) && (
+                      <div className="text-center">
+                        <p className="text-2xl font-semibold leading-none primary-color">
+                          {experienceMonths}
+                        </p>
+                        <p className="mt-1 text-[10px] uppercase tracking-widest">
+                          {experienceMonths === 1 ? "Month" : "Months"}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
             </Slide>
             <Slide direction="left" className="lg:hidden block md:hidden pt-10">
-              <img className="rounded-lg" src="/my photo 2.jpg" alt="" />
+              <img
+                className="rounded-lg border-2 border-[#159e53]"
+                src="/my photo 2.jpg"
+                alt=""
+              />
             </Slide>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-10">
               <Slide direction="left">
@@ -57,9 +95,9 @@ const AboutMe = () => {
                   to create fast, responsive interfaces that are easy to use. On
                   the backend, I build REST APIs and server-side logic with
                   Node.js, Express.js, and Hono, backed by MySQL and MongoDB
-                  databases designed for scale. I also
-                  have a strong competitive programming background, which shapes
-                  how I approach problem solving and write efficient code.
+                  databases designed for scale. I also have a strong competitive
+                  programming background, which shapes how I approach problem
+                  solving and write efficient code.
                 </p>
               </Slide>
               <Slide direction="right" className="hidden lg:block">
@@ -69,9 +107,9 @@ const AboutMe = () => {
                       EDUCATION
                     </h2>
                     <p>
-                      B.Sc Honours (4th year) in Computer Science & Engineering
+                      B.Sc Honours in Computer Science & Engineering from
+                      International Islamic University Chittagong
                     </p>
-                    <p>International Islamic University Chittagong</p>
                   </div>
                   <div className="">
                     <h2 className="text-2xl font-semibold pb-4 primary-color">
@@ -97,8 +135,10 @@ const AboutMe = () => {
               <h2 className="text-2xl font-semibold pb-4 primary-color">
                 EDUCATION
               </h2>
-              <p>B.Sc Honours (4th year) in Computer Science & Engineering</p>
-              <p>International Islamic University Chittagong</p>
+              <p>
+                B.Sc Honours in Computer Science & Engineering from
+                International Islamic University Chittagong
+              </p>
             </div>
           </Slide>
           <Slide direction="right">
@@ -122,41 +162,38 @@ const AboutMe = () => {
             <h2 className="text-2xl font-semibold pb-8 primary-color">
               SKILLS
             </h2>
-            <p className="flex flex-wrap gap-5">
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                HTML5
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                CSS3
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                Tailwind CSS
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                Bootstrap
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                JavaScript
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                ES6
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                ReactJS
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                Firebase
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                Express
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                MongoDB
-              </span>
-              <span className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md">
-                NodeJS
-              </span>
-            </p>
+            <div className="flex flex-wrap gap-5">
+              {[
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "ES6",
+                "TypeScript",
+                "ReactJS",
+                "Next.js",
+                "Tailwind CSS",
+                "Bootstrap",
+                "NodeJS",
+                "Express",
+                "Hono",
+                "REST APIs",
+                "MySQL",
+                "PostgreSQL",
+                "MongoDB",
+                "Drizzle ORM",
+                "Firebase",
+                "Zod",
+                "TanStack Query",
+                "Jotai",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="bg-[#242424] border border-[#242424] hover:border-[#159e53] cursor-default shadow2 duration-200 px-4 py-2 rounded-md"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </Slide>
         <Slide direction="right">
