@@ -9,11 +9,11 @@ AOS.init();
 const Banner = () => {
   const downloadResume = () => {
     const resumeUrl =
-      "Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf";
+      "Akil Tajwar Chowdhury - Full Stack Engineer (Resume).pdf";
     const anchor = document.createElement("a");
     anchor.href = resumeUrl;
     anchor.download =
-      "Akil Tajwar Chowdhury - MERN Stack Web Developer (Resume).pdf";
+      "Akil Tajwar Chowdhury - Full Stack Engineer (Resume).pdf";
     anchor.click();
   };
   return (
